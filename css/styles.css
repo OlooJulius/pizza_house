@@ -1,24 +1,28 @@
 body{
-    background: url("../images/foto.jpg") no-repeat center center fixed;
-    background-size:cover;
-    height: 100%;
-    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/foto.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Trade Winds';
 }
 .brand{
     height: 3.2em;
     margin-left: 5px;
     margin-top: 15px;
-
+    overflow: hidden;
 }
-.header {  
-    align-items: center;
-    height: 5px;
-    width: 10px;
-    padding-top: 5px;
+.container {
     text-align: center;
 }
-.text{
-    font-size: 30px;
-    font-family: sans-serif;
-    color: #ffffff;
+
+footer{
+    position: fixed;  
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
 }
+
