@@ -1,9 +1,6 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-image: url(../images/foto.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     font-family: 'Trade Winds';
 }
 .brand{
@@ -14,16 +11,18 @@ body{
 }
 .container {
     text-align: center;
+    display: flex;
+    align-items: center;
 }
-.recipe-menu{
+.row{
+    padding-left: 3px;
 	margin-top: 100px;
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
-.recipe{
-	background-image: url('http://mariecatribs.com/assets/styles/images/drawn-frame-big.png');
+.pizza{
 	background-size: 100% 100%;
 	padding: 10px;
     margin-bottom: 40px;
@@ -72,7 +71,7 @@ body{
     padding: 20px 0;
 }
 
-.listOfIngredients{
+.listOfToppings{
 	list-style: none;
 	margin-bottom: 15px;
 }
@@ -120,7 +119,6 @@ hr {
 
 .totalDialog{
 	display: inline-block;
-	float: right;
 }
 
 .cart > h2 > span{
