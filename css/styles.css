@@ -1,10 +1,13 @@
 body{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Trade Winds';
+  background-image: url(../images/foto.jpg);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Trade Winds';
 }
 .navbar-inverse{
     background-color: red;
+    width: 100%;
     
 }
 #nav{
@@ -17,7 +20,7 @@ body{
     margin-top: 200px;
     text-align: center;
   }
-#order-content {
+#menu {
     display: none;
     color: #000000;
     background-color: #FFFFFF;
@@ -85,7 +88,7 @@ body{
     display: none;
 }
 
-footer{
+.footer{
     position: fixed;  
     left: 0;
     bottom: 0;
