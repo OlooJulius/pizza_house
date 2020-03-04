@@ -16,7 +16,7 @@ body{
 /* project area stylying*/
 
 #main{
-    color: #000000;
+    color: #ffffff;
     margin-top: 200px;
     text-align: center;
   }
@@ -46,10 +46,6 @@ body{
   
 .address-spacing {
     margin-bottom: 20px;
-}
-  /*rem to change this to county  */
-#state-select {
-    margin-top: 0px;
 }
 
 /* btn */
@@ -86,6 +82,34 @@ body{
 
 #address, #custom-pizza, #pizza-details, #default-pizzas, #default-pizza-details, #sides-dropdown, #sides-details {
     display: none;
+}
+/* pizza form styling */
+
+#form-header {
+  color: #FFFFFF;
+  font-size: 20pt;
+  margin-bottom: 35px;
+}
+
+#form-content {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  margin-left: -35px;
+}
+
+#custom-pizza {
+  /*display: none;*/
+  margin-top: 30px;
+  border-style: solid;
+  border-color: #006699;
+  background-color: #006699;
+  border-radius: 15%;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+select {
+  margin-top: 15px;
 }
 
 .footer{
