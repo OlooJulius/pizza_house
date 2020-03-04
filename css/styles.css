@@ -5,6 +5,7 @@ body{
 }
 .navbar-inverse{
     background-color: red;
+    
 }
 #nav{
     padding-bottom: 3px;
@@ -79,6 +80,11 @@ body{
   #submit-custom-pizza {
     margin-bottom: 35px;
   }
+
+#address, #custom-pizza, #pizza-details, #default-pizzas, #default-pizza-details, #sides-dropdown, #sides-details {
+    display: none;
+}
+
 footer{
     position: fixed;  
     left: 0;

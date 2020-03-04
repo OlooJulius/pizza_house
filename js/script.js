@@ -2,12 +2,12 @@
 $(document).ready(function () {
 	//User Interface
 	$("#pickup-btn").click(function () {
-		$("#order-content").show();
-		$("#landing-content").hide();
+		$("#menu").hide();
+		$("#main").show();
 		$("#delivery-option").text("PICKUP BY CUSTOMER");
 	});
 	$("#delivery-btn").click(function () {
-		$("#address").show();
+		$("#address").toggle();
 		$("#pickup-btn,#delivery-btn,#landing-tagline").hide();
 	});
 	$("form#address-form").submit(function (event) {
