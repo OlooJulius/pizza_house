@@ -21,13 +21,14 @@ body{
     text-align: center;
   }
 #menu {
-    display: none;
+    /*display: none;*/
     color: #000000;
     background-color: #FFFFFF;
     margin-top: 100px;
     margin-bottom: 100px;
     text-align: center;
 }
+
 #price-content {
     margin-top: 100px;
 }
@@ -80,8 +81,8 @@ body{
     margin-bottom: 35px;
   }
 
-#address, #custom-pizza, #pizza-details, #default-pizzas, #default-pizza-details, #sides-dropdown, #sides-details {
-    display: none;
+/* #address, #custom-pizza, #pizza-details, #default-pizzas, #default-pizza-details, #sides-dropdown, #sides-details {  */
+    /* display: none; */
 }
 /* pizza form styling */
 
@@ -98,7 +99,7 @@ body{
 }
 
 #custom-pizza {
-  /*display: none;*/
+ /* display: none;*/
   margin-top: 30px;
   border-style: solid;
   border-color: #006699;
@@ -127,8 +128,9 @@ ul {
 
 /* stlye the defaults */
 
-#default-pizzas {
-  display: none;
+#default-pizzas,
+#price-content {
+ /* display: none;*/
 }
 
 .pizza-option, .side-option {
