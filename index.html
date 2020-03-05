@@ -5,13 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--linking styles   -->
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/bootstrap.css" rel="stylesheet">
 
   <!-- my own css -->
   <link href="./css/styles.css" rel="stylesheet" type="text/css">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
-
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
   <title>La Pizza|| WELCOME</title>
 </head>
 
@@ -36,11 +39,13 @@
 
   <!-- project area -->
   <div  id="main">
-    <h1 class="page-header">WELCOME </h1>
+    <div class="main1">
+      <h1 class="page-header">WELCOME </h1>
     <h2>To LA PIZZA</h2>
     <p>for the juiciest pizza around</p>
-    <button type="btn" class="btn btn-primary" id="pickup-btn">Pickup</button>
-    <button type="btn" class="btn btn-danger" id="delivery-btn">Delivery</button>
+    <button type="btn" class="btn btn-primary " id="pickup-btn">Pickup</button>
+    <button type="btn" class="btn btn-danger clickable" id="delivery-btn">Delivery</button>
+    </div>
     <!-- form to be used for delivery -->
     <div class="form-group" id="address">
       <h3>Delivery Address</h3>
@@ -64,19 +69,19 @@
             <label for="zipcode">Zipcode</label><input required type="text" class="form-control" id="zip-add">
           </div>
         </div>
-        <button type="submit" class="btn btn-primary" id="order-proceed-btn">Submit</button>
+        <button type="submit" class="btn btn-primary" id="order-proceed-btn" >Submit</button>
+<input type="button" id="sub" value="sub">
       </form>
     </div>
   </div>
   <!--Project area MENU-->
   <section class="order">
-    <div class="container" id="menu">
+    <div class="container clickable" id="menu">
 
       <div class="row">
         <div class="col-xs-6">
           <h2>Pizza</h2>
-          <div class="row container" id="default-pizzas">
-            <div class="col-xs-4">
+            <div class="col-xs-4" id="pizza">
               <button type="btn" class="btn btn-success pizza-option" id="cheese-default">Cheese Pizza</button>
               <div class="default-pizzas" id="cheese-default-size">
                 <button type="btn" class="btn btn-danger indiv-pizza-default" id="cheese-sm">Small@500</button>
@@ -85,7 +90,7 @@
               </div>
             </div>
             <div class="col-xs-4">
-              <button type="btn" class="btn btn-success pizza-option" id="pep-default">Pepp. Pizza</button>
+              <button type="btn" class="btn btn-success pizza-option" id="pep-default">Pepperoni. Pizza</button>
               <div class="default-pizzas" id="pep-default-size">
                 <button type="btn" class="btn btn-danger indiv-pizza-default" id="pep-sm">Small@500</button>
                 <button type="btn" class="btn btn-danger indiv-pizza-default" id="pep-md">Medium @800</button>
@@ -100,8 +105,8 @@
                 <button type="btn" class="btn btn-danger indiv-pizza-default" id="veggie-lg">Large @1200</button>
               </div>
             </div>
-          </div>
-          <button type="btn" class="btn btn-primary" id="custom-pizza-btn">Custom Pizza</button>
+            <button type="button" class="btn btn-primary" id="custom-pizza-btn">Custom Pizza</button>
+<input type="button" id="sub" value="button">
           <!-- Pizza Form Start-->
           <form class="form-group" id="custom-pizza">
             <div id="form-content">
@@ -195,7 +200,6 @@
           <!--Custom Pizza Form End -->
         </div>
       </div>
-      <!-- cart section  -->
       <div class="col-xs-4" id="price-content">
         <h1 class="page-header">Cart</h1>
         <h2>Price: $s<span id="final cost"></span></h2>
@@ -208,9 +212,14 @@
         <button type="btn" class="btn btn-danger" id="checkout-btn">Checkout</button>
         <h3><span id="delivery-option"></span></h3>
       </div>
+    </div>
+      <!-- cart section  -->
+      <div class="row">
+        
+      </div>
+      
       
       <!-- cart ending -->
-    </div>
   </section>
 
 
@@ -218,7 +227,7 @@
     <p>&copy; LA PIZZA 2020</p>
   </div>
   <!-- js links -->
-  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/bootstrap.js"></script>
   <script src="./js/script.js"></script>
 </body>
 

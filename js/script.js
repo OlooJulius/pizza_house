@@ -1,26 +1,52 @@
 
 // init js
 $(document).ready(function () {
-	
-	$("#pickup-btn").click(function () {
-		$("#menu").hide();
-		$("#main").show();
-		$("#delivery-option").text("PICKUP BY CUSTOMER");
+	$("#delivery-btn").click(function(){
+		$(".main1").toggle();
+		$("#address").toggle()
 	});
-	$("#delivery-btn").click(function () {
-		$("#address").show();
-		$("#pickup-btn,#delivery-btn,#landing-tagline").hide();
-	});
-	$("form#address-form").submit(function (event) {
+
+	$("#order-proceed-btn").click(function(event){
 		event.preventDefault();
 		var streetAddress = $("input#street-add").val();
 		var city = $("input#city-add").val();
 		var zipcode = $("input#zip-add").val();
-		var newAddress = new Address(streetAddress, city, state, zipcode)
-		$("#order-content").show();
-		$("#landing-content").hide();
-		$("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
-	});
+
+		var newLocation = function Address(strtAdd,city, zipcode){
+			this.strtAdd = strtAdd;
+			this.city = city;
+			this.zipcode = zipcode;
+		}
+		// var newAddress = new newLocation(strtAdd, city, zipcode);
+
+		// $("#custom-pizza").toggle();
+		// console.log('skkdkkd')
+
+
+	});		$("#sub").click(function(){
+			console.log('skkdkkd')
+			
+			$("#custom-pizza").css("display", "block");
+
+		});
+// });
+
+	// $("#pickup-btn").click(function () {
+	// 	$("#main").hide();
+	// 	$("#menu").show();
+	// 	$("#delivery-option").text("PICKUP BY CUSTOMER");
+	// });
+	// $("#delivery-btn").click(function () {
+	// 	$("#address").show();
+	// 	$("#pickup-btn,#delivery-btn,#landing-tagline").hide();
+	// });
+	// $("form#address-form").submit(function (event) {
+	// 	event.preventDefault();
+	
+	// 	$("#menu").show();
+	// 	$("#address").hide();
+	// 	$("#delivery-option").text("DELIVER TO: " + newAddress.deliveryAddress);
+	// });
 	$("form#custom-pizza").submit(function (event) {
 		event.preventDefault();
 		var customSize = $("select#size").val();
@@ -44,7 +70,6 @@ $(document).ready(function () {
 	$("#checkout-btn").click(function() {
     location.reload();
   });
-});
 	// Business Logic
 var totalPriceArray = []; // global variable
 function Order (customSize, cheese) {
@@ -90,3 +115,4 @@ function Address (streetAddress, city, state, zipcode) {
   this.zipcode = zipcode;
   this.deliveryAddress = (streetAddress + "  " + city + ", " + zipcode);
 };
+});
